@@ -1,9 +1,6 @@
 package org.example.springangularmaterial.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
@@ -14,6 +11,7 @@ public class Student {
     private String id;
     private String fname;
     private String lname;
+    @Column(unique = true)
     private String code;
     private String programmeId;
     private String photo;
