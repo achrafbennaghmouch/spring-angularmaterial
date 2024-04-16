@@ -1,2 +1,4 @@
-package org.example.springangularmaterial.repository;public interface StudentRepository {
+package org.example.springangularmaterial.repository;
+
+public interface StudentRepository {
 }
