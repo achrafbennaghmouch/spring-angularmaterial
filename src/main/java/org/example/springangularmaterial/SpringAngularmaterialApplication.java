@@ -21,7 +21,7 @@ public class SpringAngularmaterialApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringAngularmaterialApplication.class, args);
 	}
-@Bean
+//@Bean
 	CommandLineRunner  commandLineRunner(StudentRepository studentRepository, PaymentRepository paymentRepository){
 		return args -> {
 				studentRepository.save(Student.builder().id(UUID.randomUUID().toString()).fname("Achraf")
